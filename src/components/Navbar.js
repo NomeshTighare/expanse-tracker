@@ -2,7 +2,7 @@ import React from 'react';
 import{FaUser,
        FaEdit} from 'react-icons/fa';
        
-export default function Navbar() {
+export default function Navbar(props) {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -16,16 +16,16 @@ export default function Navbar() {
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                         <div className="d-flex">
                             <ul className="navbar-nav">
-                            <li class="nav-item">
-                                  <a class="nav-link" href="/">Dashboard</a>
+                            <li class={`nav-item ${props.page=="dashboard" ? "active": ""}`}>
+                                  <a class="nav-link " href="/">Dashboard</a>
                             </li>
 
-                            <li class="nav-item">
-                                  <a class="nav-link" href="/budget">Add Budget</a>
+                            <li class={`nav-item ${props.page=="budget" ? "active" : ""}`}>
+                                  <a class="nav-link " href="/budget">Add Budget</a>
                             </li>
 
-                            <li class="nav-item">
-                                  <a class="nav-link" href="/expanse">Add Expanse</a>
+                            <li class={`nav-item ${props.page=="expanse" ? "active" : ""}`}>
+                                  <a class="nav-link " href="/expanse">Add Expanse</a>
                             </li>
                             </ul>
                         </div>
