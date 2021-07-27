@@ -9,13 +9,13 @@ function Dashboard() {
      <div className="container">
        <div className="row">
          <div className="col-md-4">
-         <TotalAmmount type="success" value="3,00,000" name="Total Ammount"/>
+         <TotalAmmount type="success" value="15,00,000" name="Total Ammount"/>
          </div>
          <div className="col-md-4">
-         <TotalAmmount type="warning" value="2,00,000" name="Total Spend"/>
+         <TotalAmmount type="warning" value="7,00,000" name="Total Spend"/>
          </div>
          <div className="col-md-4">
-         <TotalAmmount type="danger" value="1,00,000" name="Total Left"/>
+         <TotalAmmount type="danger" value="8,00,000" name="Total Left"/>
          </div>
 
             <div className="col-md-12">
